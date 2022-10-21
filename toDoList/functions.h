@@ -33,4 +33,5 @@ void show_tasks_for_day(Task* task);
 void show_tasks_for_week(Task* task);
 void show_tasks_for_month(Task* task);
 
+void make_todolist(Task* task);
 #endif

@@ -4,6 +4,7 @@
 
 int main()
 {
-    Task* toDoList = new Task[10];
+    Task* toDoList = new Task;
+    make_todolist(toDoList);
 
 }
