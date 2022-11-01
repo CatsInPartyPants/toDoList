@@ -2,6 +2,8 @@
 #define _TODOLIST_H_
 #include <string>
 
+void main_menu();
+
 enum { HIGH = 3, STANDART = 2, LOW = 1 };
 
 struct Task {
@@ -18,7 +20,7 @@ struct Task {
 	Task* next;
 };
 
-void add_task(Task* task);
+Task* add_task(Task* task);
 
 void delete_task(Task* task);
 
@@ -28,6 +30,8 @@ void find_task_by_name(Task* task);
 void find_task_by_priority(Task* task);
 void find_task_by_disctiption(Task* task);
 void find_task_by_date(Task* task);
+
+void show_all_tasks(Task* task);
 
 void show_tasks_for_day(Task* task);
 void show_tasks_for_week(Task* task);
